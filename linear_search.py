@@ -13,3 +13,12 @@ if result != -1:
     print("Target found at index:", result)
 else:
     print("Target not found in the list.")
+
+'''
+Time Complexity:
+The time complexity of linear search is O(n), where n is the number of elements in the array. In the worst case, it may need to iterate through the entire array to find the target element.
+
+Space Complexity:
+The space complexity of linear search is O(1) because it does not require any extra space that grows with the input size. It only uses a fixed amount of space to store the variables i and target.
+***/
+'''
