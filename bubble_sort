@@ -1,0 +1,21 @@
+def bubble_sort(arr):
+    n = len(arr)
+    
+    for i in range(n):
+        # Last i elements are already in place
+        for j in range(n - i - 1):
+            if arr[j] > arr[j + 1]:
+                # Swap elements if they are in the wrong order
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+arr = [4, 2, 7, 1, 9, 5]
+bubble_sort(arr)
+print("Sorted array:", arr)
+
+'''
+Time Complexity:
+The time complexity of Bubble Sort is O(n^2) in the average and worst cases, where n is the number of elements in the array. It involves two nested loops that iterate over the entire array, resulting in a quadratic time complexity.
+
+Space Complexity:
+The space complexity of Bubble Sort is O(1) because it only uses a constant amount of extra space to store variables like i, j, and temporary variables for swapping.
+'''
