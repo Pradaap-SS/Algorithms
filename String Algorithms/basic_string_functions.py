@@ -4,6 +4,16 @@ Write a function that takes a string as input and returns the string reversed.
 
 Time Complexity: O(n), where n is the length of the string.
 Space Complexity: O(n), as a new string of length n is created.
+
+In Python, strings can be sliced using the [::-1] notation, which means to start from the end of the string 
+and move backwards with a step of -1. This effectively reverses the order of characters in the string.
+
+
+The input string s is passed to the function.
+The slicing operation s[::-1] is performed on the string. 
+It starts from the first character (implicitly, as the start index is not specified), 
+moves to the last character (implicitly, as the end index is not specified), and steps backward by -1.
+The resulting reversed string is returned as the output.
 '''
 
 def reverse_string(s):
@@ -16,6 +26,8 @@ if they are anagrams (contain the same characters), False otherwise.
 
 Time Complexity: O(n log n), where n is the length of the longest string. This is due to the sorting operation.
 Space Complexity: O(n), as the sorted strings are created.
+The function uses the sorted() function to sort the characters in both s1 and s2. 
+Sorting the characters ensures that if two strings are anagrams, their sorted versions will be identical.
 '''
 
 def is_anagram(s1, s2):
